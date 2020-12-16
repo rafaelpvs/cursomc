@@ -13,7 +13,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_estado")
-public class Estado implements Serializable{
+public class Estado implements Serializable {
 	/**
 	 * 
 	 */
@@ -22,7 +22,7 @@ public class Estado implements Serializable{
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Integer id;
 	private String nome;
-	
+
 	@OneToMany(mappedBy = "estado")
 	private List<Cidade> cidades = new ArrayList<>();
 
@@ -84,6 +84,5 @@ public class Estado implements Serializable{
 			return false;
 		return true;
 	}
-	
-	
+
 }
