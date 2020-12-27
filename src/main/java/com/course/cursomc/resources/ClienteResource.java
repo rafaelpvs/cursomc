@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.course.cursomc.domain.Cliente;
-import com.course.cursomc.domain.Cliente;
 import com.course.cursomc.dto.ClienteDTO;
 import com.course.cursomc.services.ClienteService;
 
