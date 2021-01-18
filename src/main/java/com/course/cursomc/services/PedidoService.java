@@ -3,8 +3,6 @@ package com.course.cursomc.services;
 import java.util.Date;
 import java.util.Optional;
 
-import javax.validation.constraints.Email;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
