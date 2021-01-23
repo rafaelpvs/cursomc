@@ -20,11 +20,11 @@ public abstract class AbstractEmailService implements EmailService {
 	@Value("${default.sender}")
 	private String sender;
 	
-	@Autowired
+	/*@Autowired
 	private TemplateEngine templateEngine;
 	
 	@Autowired
-	private JavaMailSender javaMailSender;
+	private JavaMailSender javaMailSender;*/
 	
 	
 	@Override
@@ -43,7 +43,7 @@ public abstract class AbstractEmailService implements EmailService {
 		return sm;
 	}
 	
-	protected String htmlFromTemplatePedido(Pedido obj) {
+	/*protected String htmlFromTemplatePedido(Pedido obj) {
 		Context context = new Context();
 		context.setVariable("pedido", obj);
 		
@@ -70,6 +70,6 @@ public abstract class AbstractEmailService implements EmailService {
 		mmh.setSentDate(new Date(System.currentTimeMillis()));
 		mmh.setText(htmlFromTemplatePedido(obj), true);
 		return mimeMessage;
-	}
+	}*/
 	
 }
