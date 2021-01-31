@@ -55,6 +55,8 @@ public class Cliente implements Serializable {
 	@JsonIgnore
 	@OneToMany(mappedBy = "cliente")
 	private List<Pedido> pedidos = new ArrayList<>();
+	
+	private String imageUtl;
 
 	public Cliente() {
 		addPerfil(Perfil.CLIENTE);
@@ -150,6 +152,14 @@ public class Cliente implements Serializable {
 	public void setPedidos(List<Pedido> pedidos) {
 		this.pedidos = pedidos;
 	}
+	
+	public String getImageUtl() {
+		return imageUtl;
+	}
+
+	public void setImageUtl(String imageUtl) {
+		this.imageUtl = imageUtl;
+	}
 
 	@Override
 	public int hashCode() {
@@ -175,5 +185,7 @@ public class Cliente implements Serializable {
 			return false;
 		return true;
 	}
+
+	
 
 }
